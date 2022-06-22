@@ -1,6 +1,6 @@
 import os
 
-class FilePathMapper:
+class PathMapper:
     """This class is a tool for mapping out file and folder structures and returning them in a useable format.
 
     Args:
