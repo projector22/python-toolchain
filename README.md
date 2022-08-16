@@ -93,6 +93,48 @@ mdb.table('example_table').delete(
 )
 ```
 
+## Misc Functions
+
+### `add_leading_zero`
+
+#### Added
+
+2022-08-16
+
+#### Example
+
+```python3
+from lib.Misc.add_leading_zero import add_leading_zero
+
+print(add_leading_zero(5))
+print(add_leading_zero(5, 2))
+print(add_leading_zero(0, 1))
+print(add_leading_zero(12))
+print(add_leading_zero('12'))
+print(add_leading_zero('cheese'))
+```
+
+### `add_to_archive`
+
+#### Added
+
+2022-08-16
+
+#### Example
+
+```python3
+from lib.Misc.add_to_archive import add_to_archive
+
+data = {
+    "cheese": [
+        "cake", "mouse"
+    ],
+    "bacon": True
+}
+
+add_to_archive(data, "my_json_file.json", "example_file_name.zip")
+```
+
 ## Attribution
 
 Gareth Palmer ([Gitlab](https://gitlab.com/projector22), [Github](https://github.com/projector22))
